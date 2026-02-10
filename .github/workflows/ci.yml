@@ -22,6 +22,8 @@ jobs:
               run: npm run lint
             - name: Ejecutar pruebas
               run: npm test
-            - name: Simular despliegue
-              run: |
-                echo "Despliegue simulado: La aplicacion paso Lint y pruebas exitosamente."
+            - name: Build
+              run: npm ci
+            # - name: Simular despliegue
+            #   run: |
+            #     echo "Despliegue simulado: La aplicacion paso Lint y pruebas exitosamente."
